@@ -304,16 +304,18 @@ document.addEventListener('keydown', (e) => {
 
 renderTime();
 
-loadThoughts()
-  .then((list) => {
-    thoughts = list;
+async function init() {
+  try {
+    thoughts = await loadThoughts();
     if (!thoughts.length) throw new Error('no thoughts');
     index = pickInitialIndex();
     render();
-  })
-  .catch(() => {
+  } catch {
     els.text.textContent = 'Be still, and know.';
     els.cycle.disabled = true;
     els.pin.disabled = true;
     els.fav.disabled = true;
-  });
+  }
+}
+
+init();

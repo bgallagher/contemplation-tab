@@ -136,17 +136,20 @@ function unfavourite(id) {
 
 // ---------- Start ----------
 
-loadThoughts()
-  .then((list) => {
+async function init() {
+  try {
+    const list = await loadThoughts();
     byId = new Map(list.map((t) => [t.id, t]));
     const favs = items();
     const wanted = new URLSearchParams(location.search).get('id');
     const initial = favs.find((f) => f.id === wanted) || favs[0];
     select(initial ? initial.id : null);
     if (initial && wanted === initial.id) els.journal.focus();
-  })
-  .catch(() => {
+  } catch {
     els.count.textContent = '';
     els.empty.hidden = false;
     els.list.hidden = true;
-  });
+  }
+}
+
+init();
