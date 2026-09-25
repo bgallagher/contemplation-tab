@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Favourites · still.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="fav-page">
+  <header class="top">
+    <a class="back-link" href="newtab.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+      New tab
+    </a>
+    <span class="wordmark">still.</span>
+  </header>
+
+  <div class="fav-title">
+    <h1>Favourites</h1>
+    <span id="fav-count" class="fav-count"></span>
+  </div>
+
+  <main class="fav-grid">
+    <section class="fav-list-pane" aria-label="Saved contemplations">
+      <ul id="fav-list" class="fav-list"></ul>
+      <div id="fav-empty" class="fav-empty" hidden>
+        <p class="fav-empty-title">No favourites yet</p>
+        <p>Tap the heart on a contemplation you'd like to return to, and it will wait for you here.</p>
+      </div>
+    </section>
+
+    <section class="fav-detail" aria-label="Journal">
+      <div id="detail" hidden>
+        <p id="detail-text" class="detail-text"></p>
+        <p id="detail-meta" class="card-meta"></p>
+        <div class="journal-head">
+          <label for="journal">Journal</label>
+          <span id="save-status" class="save-status"></span>
+        </div>
+        <textarea id="journal" class="journal" placeholder="Write freely. What does this contemplation stir in you today?"></textarea>
+      </div>
+      <p id="detail-empty" class="detail-empty">Select a contemplation to begin journalling.</p>
+    </section>
+  </main>
+
+  <script src="common.js"></script>
+  <script src="favourites.js"></script>
+</body>
+</html>

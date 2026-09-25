@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>New Tab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top fadeable">
+    <span class="wordmark">still.</span>
+    <a class="saved-link" href="favourites.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path class="heart-fill" d="M12 20s-7-4.6-7-9.5A3.8 3.8 0 0 1 12 6a3.8 3.8 0 0 1 7 4.5C19 15.4 12 20 12 20z"/></svg>
+      Saved
+    </a>
+  </header>
+
+  <main class="center">
+    <div class="dot" aria-hidden="true"></div>
+
+    <figure class="card fadeable">
+      <blockquote class="card-text" id="card-text">&nbsp;</blockquote>
+    </figure>
+
+    <div class="card-actions fadeable">
+      <button id="btn-cycle" class="pill" type="button">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.3-4.9L4 8M4 4v4h4M4 13a8 8 0 0 0 14.3 4.9L20 16M20 20v-4h-4"/></svg>
+        New contemplation
+      </button>
+      <button id="btn-pin" class="round" type="button" aria-pressed="false" title="Pin for today">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6M10 3v6l-3 4h10l-3-4V3M12 13v8"/></svg>
+      </button>
+      <button id="btn-fav" class="round" type="button" aria-pressed="false" title="Save to favourites">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.6-7-9.5A3.8 3.8 0 0 1 12 6a3.8 3.8 0 0 1 7 4.5C19 15.4 12 20 12 20z"/></svg>
+      </button>
+    </div>
+  </main>
+
+  <footer class="timer-area fadeable">
+    <div class="timer-label">Meditation timer</div>
+    <div class="timer-row">
+      <button id="btn-play" class="round" type="button" aria-label="Start timer">
+        <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3v14H7zM14 5h3v14h-3z"/></svg>
+      </button>
+      <span id="time" class="time" aria-live="off">5:00</span>
+      <button id="btn-add" class="round" type="button" aria-label="Add 5 minutes" title="Add 5 minutes">+5</button>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast fadeable" role="status" hidden>
+    <div class="toast-icon">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path class="heart-fill" d="M12 20s-7-4.6-7-9.5A3.8 3.8 0 0 1 12 6a3.8 3.8 0 0 1 7 4.5C19 15.4 12 20 12 20z"/></svg>
+    </div>
+    <div>
+      <p class="toast-title">Saved to favourites</p>
+      <p class="toast-sub">Capture a thought while it's fresh.</p>
+      <a id="toast-link" class="toast-cta" href="favourites.html">Add a thought →</a>
+    </div>
+    <button id="toast-close" class="toast-close" type="button" aria-label="Dismiss notification">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+
+  <script src="common.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

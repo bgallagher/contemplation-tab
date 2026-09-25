@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "still.",
+  "description": "A quiet new tab: a daily Brahma Kumaris contemplation, a dot to rest your eyes on, and a meditation timer.",
+  "version": "0.1.0",
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  }
+}
