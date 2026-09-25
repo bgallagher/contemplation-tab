@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-"still." — a Chrome MV3 extension that replaces the new tab page with a minimalist meditation page: a Brahma Kumaris contemplation, a breathing orb to focus on, a meditation timer that ends with a gong, and a favourites page with a private journal. Product requirements are in `MVP PRD.pdf`. The UI design lives in a Claude Design canvas: https://claude.ai/artifact/LXpYyVzbgoQ1WjBky5C7JR (boards: new tab desktop/mobile, favourites & journal).
+"still." — a Chrome MV3 extension that replaces the new tab page with a minimalist meditation page: a Brahma Kumaris contemplation, a breathing orb to focus on, a meditation timer that ends with a gong, and a favourites page with a private journal. Product requirements are in `MVP PRD.pdf` (local only, gitignored). The UI design lives in a Claude Design canvas: https://claude.ai/artifact/LXpYyVzbgoQ1WjBky5C7JR (boards: new tab desktop/mobile, favourites & journal).
 
 ## Running it
 
