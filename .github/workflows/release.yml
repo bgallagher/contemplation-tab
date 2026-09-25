@@ -1,0 +1,39 @@
+# Builds the Chrome Web Store zip when a version tag (v1.2.3) is pushed,
+# and attaches it to a GitHub Release for that tag.
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write # create the release and upload the zip
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check tag matches manifest version
+        run: |
+          version=$(node -p "require('./manifest.json').version")
+          if [ "$GITHUB_REF_NAME" != "v$version" ]; then
+            echo "::error::Tag $GITHUB_REF_NAME doesn't match manifest.json version $version (expected v$version)"
+            exit 1
+          fi
+
+      - name: Syntax check
+        run: for f in common.js app.js favourites.js; do node --check "$f"; done
+
+      - name: Build zip
+        run: scripts/package.sh
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" dist/still-*.zip --title "still. $GITHUB_REF_NAME" --generate-notes

@@ -42,5 +42,5 @@ There's no build step and there are no dependencies. The extension is plain HTML
 - After editing, reload the extension in `chrome://extensions`.
 - To work on it in an ordinary browser tab, run `python3 -m http.server` in this folder and open `http://localhost:8000/newtab.html`. Opening the files directly with `file://` won't work, because the contemplations are loaded with `fetch`.
 - [CLAUDE.md](CLAUDE.md) describes the architecture, how state is stored, and the rules for adding contemplations.
-
-When packaging for the Web Store, zip only the files the extension needs: `manifest.json`, `newtab.html`, `favourites.html`, `style.css`, `common.js`, `app.js`, `favourites.js` and `contemplations.json`. Leave out `docs/`, `CLAUDE.md` and the PRD.
+- `node scripts/make-icons.mjs` regenerates the icons in `icons/`.
+- To release, bump `version` in `manifest.json`, commit, then push a matching tag (`git tag v0.1.0 && git push origin v0.1.0`). A GitHub Action builds the Web Store upload, `still-<version>.zip`, containing only the files the extension loads, and attaches it to a GitHub Release. `scripts/package.sh` builds the same zip locally in `dist/`. Listing copy, privacy answers and the pre-submission notes are in [CHROMEWEBSTORE.md](CHROMEWEBSTORE.md), and the privacy policy is in [PRIVACY.md](PRIVACY.md).

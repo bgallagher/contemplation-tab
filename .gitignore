@@ -11,3 +11,6 @@
 
 # Product requirements (kept locally, not published)
 MVP PRD.pdf
+
+# Packaged extension (scripts/package.sh)
+dist/
