@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Packaged extension builds and signing key (never commit the .pem)
+*.zip
+*.crx
+*.pem
+
+# Claude Code per-machine settings
+.claude/settings.local.json
