@@ -24,7 +24,7 @@ function today() {
 }
 
 async function loadThoughts() {
-  const res = await fetch('blessings.json');
+  const res = await fetch('contemplations.json');
   const data = await res.json();
   return data.thoughts;
 }

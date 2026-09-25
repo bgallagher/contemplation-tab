@@ -6,8 +6,8 @@
     "attribution": "Brahma Kumaris",
     "language": "en",
     "generated": "2026-09-23",
-    "count": 107,
-    "status": "partial — June 1-30 (except June 13, image not published), July 1-31, August 1-31 (except August 30, image not published), September 1-17",
+    "count": 88,
+    "status": "partial — June 1-30 (except June 13, image not published), July 1-31, August 1-31 (except August 30, image not published), September 1-17; thoughts that refer to God are excluded",
     "fidelity": "verbatim (text stored exactly as printed, including original capitalisation and punctuation)",
     "id_scheme": "First 12 hex chars of SHA-256 over the text normalised to lowercase with collapsed whitespace. Stable, deterministic; reference a thought by its id.",
     "duplicate_ids": []
@@ -50,15 +50,6 @@
       "attribution": "Brahma Kumaris"
     },
     {
-      "id": "c027f3d85e57",
-      "text": "When one observes the beauty that is within God, it becomes so easy to appreciate the beauty within Creation.",
-      "date": "2026-06-05",
-      "date_label": "June 5",
-      "lang": "en",
-      "source": "shivbabas.org",
-      "attribution": "Brahma Kumaris"
-    },
-    {
       "id": "ad16e22cebbe",
       "text": "Why try to prove yourself? Let others learn sense through your innocence.",
       "date": "2026-06-06",
@@ -81,24 +72,6 @@
       "text": "Some people never mature because of a fear aging, and some because they refuse to accept responsibility.",
       "date": "2026-06-08",
       "date_label": "June 8",
-      "lang": "en",
-      "source": "shivbabas.org",
-      "attribution": "Brahma Kumaris"
-    },
-    {
-      "id": "804a8eda40bb",
-      "text": "Love of God makes you love all mankind and hate none. Love of one individual makes you love only one and hate many.",
-      "date": "2026-06-09",
-      "date_label": "June 9",
-      "lang": "en",
-      "source": "shivbabas.org",
-      "attribution": "Brahma Kumaris"
-    },
-    {
-      "id": "8acf65b72961",
-      "text": "If every morning you can spend a few moments to sort out your throughts and remember GOD, your day will be filled with magic.",
-      "date": "2026-06-10",
-      "date_label": "June 10",
       "lang": "en",
       "source": "shivbabas.org",
       "attribution": "Brahma Kumaris"
@@ -203,15 +176,6 @@
       "attribution": "Brahma Kumaris"
     },
     {
-      "id": "5fd7afa00eaa",
-      "text": "If you love someone, you try to be like how that person is. If we love God, should we not attempt to be Godly?",
-      "date": "2026-06-23",
-      "date_label": "June 23",
-      "lang": "en",
-      "source": "shivbabas.org",
-      "attribution": "Brahma Kumaris"
-    },
-    {
       "id": "9271f4363009",
       "text": "If i enjoy praise, it means I can be easily hurt by defamation.",
       "date": "2026-06-24",
@@ -252,15 +216,6 @@
       "text": "Once you get used to doing nothing, you find that there is no time left to become busy.",
       "date": "2026-06-28",
       "date_label": "June 28",
-      "lang": "en",
-      "source": "shivbabas.org",
-      "attribution": "Brahma Kumaris"
-    },
-    {
-      "id": "03ca388f9ca4",
-      "text": "If you give your heart to God, you will not get heart attacks.",
-      "date": "2026-06-29",
-      "date_label": "June 29",
       "lang": "en",
       "source": "shivbabas.org",
       "attribution": "Brahma Kumaris"
@@ -338,15 +293,6 @@
       "attribution": "Brahma Kumaris"
     },
     {
-      "id": "ab19f7aa9c2e",
-      "text": "God has a broad back, if you have burden let Him take it from you.",
-      "date": "2026-07-08",
-      "date_label": "July 8",
-      "lang": "en",
-      "source": "shivbabas.org",
-      "attribution": "Brahma Kumaris"
-    },
-    {
       "id": "9341c6c84e9a",
       "text": "Physical beauty can be lost with marks of age or through accident. Spiritual beauty cannot be destroyed.",
       "date": "2026-07-09",
@@ -383,15 +329,6 @@
       "attribution": "Brahma Kumaris"
     },
     {
-      "id": "495b4dcacf77",
-      "text": "If a task is performed in the consciousness that God is my companion then the impossible is Possible.",
-      "date": "2026-07-13",
-      "date_label": "July 13",
-      "lang": "en",
-      "source": "shivbabas.org",
-      "attribution": "Brahma Kumaris"
-    },
-    {
       "id": "f65c5e07ab05",
       "text": "The beauty of all things lies in your ability to appreciate them.",
       "date": "2026-07-14",
@@ -423,15 +360,6 @@
       "text": "Sometimes due to jealousy we try to degrade others, and in so doing we degrade ourselves.",
       "date": "2026-07-17",
       "date_label": "July 17",
-      "lang": "en",
-      "source": "shivbabas.org",
-      "attribution": "Brahma Kumaris"
-    },
-    {
-      "id": "21c0880a249f",
-      "text": "Do my thoughts qualify me to claim the title “Child of God”?",
-      "date": "2026-07-18",
-      "date_label": "July 18",
       "lang": "en",
       "source": "shivbabas.org",
       "attribution": "Brahma Kumaris"
@@ -500,24 +428,6 @@
       "attribution": "Brahma Kumaris"
     },
     {
-      "id": "ecdb7e06c447",
-      "text": "When a person surrenders to God, he switches his mind to him, listen to His advice and acts according to it.",
-      "date": "2026-07-26",
-      "date_label": "July 26",
-      "lang": "en",
-      "source": "shivbabas.org",
-      "attribution": "Brahma Kumaris"
-    },
-    {
-      "id": "49bb976bd06f",
-      "text": "If I consider all my actions are for God, then every task becomes a pleasure to perform.",
-      "date": "2026-07-27",
-      "date_label": "July 27",
-      "lang": "en",
-      "source": "shivbabas.org",
-      "attribution": "Brahma Kumaris"
-    },
-    {
       "id": "5f97c32136a9",
       "text": "If a task is performed with the feeling of love, then there is instant success.",
       "date": "2026-07-28",
@@ -545,15 +455,6 @@
       "attribution": "Brahma Kumaris"
     },
     {
-      "id": "289cde9fa245",
-      "text": "We are limited in the amount of help we can give to others. it is far better to help a soul come closer to God-than all help received.",
-      "date": "2026-07-31",
-      "date_label": "July 31",
-      "lang": "en",
-      "source": "shivbabas.org",
-      "attribution": "Brahma Kumaris"
-    },
-    {
       "id": "221f3f135f86",
       "text": "When there is the descent of man, What can be called decent?",
       "date": "2026-08-01",
@@ -576,24 +477,6 @@
       "text": "Unless I develop Self-respect, I will remain under someone else’s foot.",
       "date": "2026-08-03",
       "date_label": "August 3",
-      "lang": "en",
-      "source": "shivbabas.org",
-      "attribution": "Brahma Kumaris"
-    },
-    {
-      "id": "f05b524567e2",
-      "text": "God has love even for sinners. All are children of God and so what right do I have to hate a child of God?",
-      "date": "2026-08-04",
-      "date_label": "August 4",
-      "lang": "en",
-      "source": "shivbabas.org",
-      "attribution": "Brahma Kumaris"
-    },
-    {
-      "id": "d4ac25fcacca",
-      "text": "Once you experience God, there is no need to look for anyone better.",
-      "date": "2026-08-05",
-      "date_label": "August 5",
       "lang": "en",
       "source": "shivbabas.org",
       "attribution": "Brahma Kumaris"
@@ -675,15 +558,6 @@
       "text": "The princes among us are those who forget themselves and serve mankind.",
       "date": "2026-08-14",
       "date_label": "August 14",
-      "lang": "en",
-      "source": "shivbabas.org",
-      "attribution": "Brahma Kumaris"
-    },
-    {
-      "id": "85b622962a5b",
-      "text": "God is the Ocean of Virtues. If you are burning with any vice, take a dip in that Ocean.",
-      "date": "2026-08-15",
-      "date_label": "August 15",
       "lang": "en",
       "source": "shivbabas.org",
       "attribution": "Brahma Kumaris"
@@ -815,24 +689,6 @@
       "attribution": "Brahma Kumaris"
     },
     {
-      "id": "859a03c08593",
-      "text": "When people cannot stand you because they do not understand you, God will stand by you.",
-      "date": "2026-08-31",
-      "date_label": "August 31",
-      "lang": "en",
-      "source": "shivbabas.org",
-      "attribution": "Brahma Kumaris"
-    },
-    {
-      "id": "e6d31bf98d59",
-      "text": "To have respect for the self and love for God makes it easy to appreciate other human beings.",
-      "date": "2026-09-01",
-      "date_label": "September 1",
-      "lang": "en",
-      "source": "shivbabas.org",
-      "attribution": "Brahma Kumaris"
-    },
-    {
       "id": "b28657762b10",
       "text": "Success springs from calmness of the mind. It is cold iron which cuts and bends hot iron.",
       "date": "2026-09-02",
@@ -855,15 +711,6 @@
       "text": "What causes the most pain - the mistake or the criticism for the mistake?",
       "date": "2026-09-04",
       "date_label": "September 4",
-      "lang": "en",
-      "source": "shivbabas.org",
-      "attribution": "Brahma Kumaris"
-    },
-    {
-      "id": "a2f30885261c",
-      "text": "If truth and honesty come easy to me, then love from God also comes easily.",
-      "date": "2026-09-05",
-      "date_label": "September 5",
       "lang": "en",
       "source": "shivbabas.org",
       "attribution": "Brahma Kumaris"
@@ -923,15 +770,6 @@
       "attribution": "Brahma Kumaris"
     },
     {
-      "id": "3fa1950df2a1",
-      "text": "To experience ALL relationship with God means that I have gone beyond all desires.",
-      "date": "2026-09-12",
-      "date_label": "September 12",
-      "lang": "en",
-      "source": "shivbabas.org",
-      "attribution": "Brahma Kumaris"
-    },
-    {
       "id": "465178deb0f4",
       "text": "The experience of True Happiness cures the sickness of sorrow.",
       "date": "2026-09-13",
@@ -945,15 +783,6 @@
       "text": "We all must face problems, but it is how you face them that counts.",
       "date": "2026-09-14",
       "date_label": "September 14",
-      "lang": "en",
-      "source": "shivbabas.org",
-      "attribution": "Brahma Kumaris"
-    },
-    {
-      "id": "1ee7e513bf50",
-      "text": "This is a mad world, but it is good sense to be madly in Love with God.",
-      "date": "2026-09-15",
-      "date_label": "September 15",
       "lang": "en",
       "source": "shivbabas.org",
       "attribution": "Brahma Kumaris"

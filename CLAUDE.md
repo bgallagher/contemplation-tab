@@ -11,7 +11,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 There is no build step, package manager, linter or test suite. It is plain HTML/CSS/JS loaded as classic `<script>` tags.
 
 - **As the extension:** `chrome://extensions` → Developer mode → Load unpacked → this folder. Reload the extension after edits.
-- **In a browser tab:** `python3 -m http.server` from this folder, then open `/newtab.html` or `/favourites.html`. Opening the files via `file://` won't work, because `fetch('blessings.json')` is blocked there. `manifest.json` is ignored in this mode, so the same files also work as a static website.
+- **In a browser tab:** `python3 -m http.server` from this folder, then open `/newtab.html` or `/favourites.html`. Opening the files via `file://` won't work, because `fetch('contemplations.json')` is blocked there. `manifest.json` is ignored in this mode, so the same files also work as a static website.
 - **Syntax check:** `node --check <file>.js`.
 - **Headless verification:** Chrome's `--screenshot` with `--virtual-time-budget` tends to hang on these pages (the orb runs an infinite animation, and redirect-based localStorage seeding also hangs). Instead, drive `--headless=new --remote-debugging-port=…` over CDP from a small Node script: `Page.navigate`, `Runtime.evaluate` to seed or inspect `localStorage` and page globals, `Input.dispatchMouseEvent` for real clicks, `Page.captureScreenshot`. Node's built-in `WebSocket`/`fetch` are enough, with no dependencies.
 
@@ -30,14 +30,15 @@ There is no build step, package manager, linter or test suite. It is plain HTML/
 - **Orb animation** scales the whole element via `transform` only, with a static `box-shadow` glow. Animating the shadow itself caused visible flicker.
 - **Favourites journal autosave** debounces 600 ms and flushes on blur, `pagehide` and card switch. `flush()` updates only the current card's meta label in place. Rebuilding the list there swaps out the button mid-click (blur fires on mousedown) and loses the click.
 
-## Content: `blessings.json`
+## Content: `contemplations.json`
 
 - Shape: `{meta, thoughts: [{id, text, date, date_label, lang, source, attribution}]}`. Keep `meta.count`, `meta.status` and `meta.duplicate_ids` updated when adding entries.
 - `id` = first 12 hex chars of SHA-256 over the text lower-cased with whitespace collapsed to single spaces. Verify existing ids still reproduce before appending.
 - **Text is verbatim** from shivbabas.org's English "Thought for Today" JPGs: keep original typos, capitalisation and curly quotes/apostrophes (`’ “ ”`); line breaks in the image become single spaces.
 - Source: monthly posts like `https://www.shivbabas.org/post/thought-for-today-<month>-2026` link images at `https://files.shivbabas.org/wp-content/uploads/<day>-<month>-2026-thought[-today]-English.jpg`. The naming varies, and some pages link only some days, so probe the pattern for the rest. There's no OCR tool installed; transcribe by reading the images.
 - Current coverage: June 1–September 17, 2026, except June 13 and August 30, which aren't published.
-- The UI calls these **"contemplations"** (never "blessing"), though the file keeps the name `blessings.json`. Attribution and date are stored but deliberately not displayed.
+- **Exclude any thought that refers to God** (the owner removed these). The dates they would have filled are left as gaps, so the set isn't one per day.
+- The UI calls these **"contemplations"** (never "blessing"). Attribution and date are stored but deliberately not displayed.
 
 ## Design decisions to respect
 

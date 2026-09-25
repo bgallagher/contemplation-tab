@@ -20,7 +20,7 @@ let byId = new Map();  // thought id → thought
 let selected = null;   // selected thought id
 let saveTimer = null;
 
-// Favourites that still exist in blessings.json, newest first.
+// Favourites that still exist in contemplations.json, newest first.
 function items() {
   return getFavourites().filter((f) => byId.has(f.id));
 }
